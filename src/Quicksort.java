@@ -1,14 +1,11 @@
 
-public class Quicksort {
+public final class Quicksort extends GenData {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-
-        GenData gd = new GenData();
 
         int valN = 20;
         int valMax = 1024;
-        int[] data = gd.getData(valN, valMax);
+        int[] data = getData(valN, valMax);
 
         printArray(data);
         sortInplace(data, 0, data.length);
@@ -64,11 +61,4 @@ public class Quicksort {
         data[aa] = tmp;
     }
 
-    private static void printArray(int[] data) {
-        int i;
-        for (i = 0; i < data.length; i++) {
-            System.out.print(String.format("%d ", data[i]));
-        }
-        System.out.println();
-    }
 }
