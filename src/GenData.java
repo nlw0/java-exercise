@@ -33,7 +33,7 @@ public class GenData {
         System.out.println();
     }
 
-    static void printList(LinkedList<Integer> data) {
+    static void printList(List<Integer> data) {
         for (Integer ii : data) {
             System.out.print(String.format("%d ", ii));
         }
